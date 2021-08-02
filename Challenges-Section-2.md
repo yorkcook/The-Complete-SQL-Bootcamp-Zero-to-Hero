@@ -60,9 +60,9 @@ Situation: IF previous customer has 50 minutes to watch a movie, how many total 
 
 SOLUTION:
 
-SELECT COUNT(title)
+<!-- SELECT COUNT(*)
 FROM film
-WHERE length <= 50
+WHERE length <= 50 -->
 
 ---
 
@@ -72,17 +72,17 @@ Situation 1: How many payment transactions were greater than \$5?
 
 Solution:
 
-SELECT COUNT(amount)
+<!-- SELECT COUNT(*)
 FROM payment
-WHERE amount > 5
+WHERE amount > 5 -->
 
 Situation 2: How many actors have a first name that starts with P?
 
 Solution:
 
-SELECT COUNT(first_name)
+<!-- SELECT COUNT(*)
 FROM actor
-WHERE first_name LIKE 'P%'
+WHERE first_name LIKE 'P%' -->
 
 Situation 3: How many unique districts are our customers from?
 
@@ -102,15 +102,15 @@ Situation 5: How many films have a rating of R and a replacement cost between 5 
 
 Solution:
 
-SELECT COUNT(\*)
+<!-- SELECT COUNT(*)
 FROM film
 WHERE rating = 'R'
-AND replacement_cost BETWEEN 5 AND 15
+AND replacement_cost BETWEEN 5 AND 15 -->
 
 Situation 6: How many films have the word Truman in the title?
 
 Solution:
 
-SELECT COUNT(title)
+<!-- SELECT COUNT(*)
 FROM film
-WHERE title LIKE '%Truman%'
+WHERE title LIKE '%Truman%' -->
