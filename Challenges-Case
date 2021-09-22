@@ -1,0 +1,26 @@
+Situation 1: We want to know the total number of movies we have in the R, PG-13, and PG categories. 
+
+
+Solution:
+
+SELECT 
+	SUM (CASE
+               WHEN rating = 'R' THEN 1
+	       ELSE 0
+	      END
+	) AS "R",
+	
+	SUM (CASE
+               WHEN rating = 'PG-13' THEN 1
+	       ELSE 0
+	      END
+	) AS "PG-13",
+	
+	SUM (CASE
+               WHEN rating = 'PG' THEN 1
+	       ELSE 0
+	      END
+	) AS "PG"
+
+FROM film
+
